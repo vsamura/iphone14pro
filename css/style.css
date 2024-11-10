@@ -90,7 +90,8 @@ body{
 .news {
   text-align: center;
 }
-.h2-title {
+.h2-title,
+.contact-h2 {
   font-weight: 700;
   font-size: 32px;
   color: var(--seryy);
@@ -99,7 +100,8 @@ body{
 }
 .news-box {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap-reverse;
   align-items: center;
   gap: 15px;
   padding: 50px 0 150px;
@@ -130,11 +132,12 @@ body{
   text-align: center;
 }
 .color-box {
-  display: grid;
-  grid-template-columns: repeat(4, 4fr);
-  justify-content: space-between;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
   gap: 15px;
   padding: 50px 0 150px;
+  margin: 0 auto;
 
 }
 .color-box-item{
@@ -156,4 +159,67 @@ body{
   font-size: 14px;
   line-height: 130%;
   color: var(--chernyy);
+}
+
+.contact {
+}
+.contact-box {
+  display: flex;
+  height: 600px;
+}
+.contact-content {
+  background: var(--deep-purple);
+  text-align: center;
+  width: 50%;
+}
+.contact-h2 {
+  color: var(--belyy);
+  padding: 107px 0 72px;
+}
+.form input{
+  display: block;
+  background: var(--deep-purple);
+  border: none;
+  border-bottom: 1px solid #fff;
+  padding-top: 30px;
+  margin: 0 auto;
+  width: 70%;
+  
+}
+.form input:focus {
+  outline:none !important
+}
+input[type=text],
+input::placeholder{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  color: var(--belyy);
+  opacity: 0.7;
+  padding-bottom: 10px;
+}
+.form label{
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  color: var(--belyy);
+  padding: 30px 0;
+  opacity: 0.5;
+}
+.form button{
+  border: none;
+  border-radius: 30px;
+  width: 240px;
+  height: 50px;
+  background: var(--belyy);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 130%;
+  color: var(--purple);
+  padding: 16px 81px;
+  text-transform: uppercase;
+}
+.contact-img {
+  width: 50%;
 }
